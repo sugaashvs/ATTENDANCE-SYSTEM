@@ -1,0 +1,518 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Inter","Segoe UI",sans-serif;
+}
+
+
+body{
+
+  min-height:100vh;
+
+  background:
+  linear-gradient(
+  135deg,
+  #667eea,
+  #764ba2
+  );
+
+  padding:30px;
+
+}
+
+
+
+
+.container{
+
+
+  max-width:1100px;
+
+  margin:auto;
+
+  padding:40px;
+
+
+  background:
+
+  rgba(255,255,255,0.18);
+
+
+  backdrop-filter:blur(25px);
+
+
+  border-radius:35px;
+
+
+  border:1px solid rgba(255,255,255,.35);
+
+
+  box-shadow:
+
+  0 30px 80px rgba(0,0,0,.25);
+
+
+
+}
+
+
+
+
+
+/* Title */
+
+
+h1{
+
+
+  text-align:center;
+
+
+  color:white;
+
+
+  font-size:42px;
+
+
+  font-weight:800;
+
+
+  margin-bottom:35px;
+
+
+  letter-spacing:-1px;
+
+
+}
+
+
+
+
+
+
+
+/* Summary */
+
+
+.summary{
+
+
+  display:flex;
+
+
+  justify-content:space-between;
+
+
+  align-items:center;
+
+
+  padding:25px;
+
+
+  margin-bottom:35px;
+
+
+
+  background:
+
+
+  rgba(255,255,255,.25);
+
+
+
+  border-radius:25px;
+
+
+
+}
+
+
+
+.summary h3{
+
+
+  color:white;
+
+
+  font-size:20px;
+
+
+}
+
+
+
+
+
+
+
+/* Reset */
+
+
+.summary button{
+
+
+  background:white;
+
+
+  color:#7c3aed;
+
+
+  border:none;
+
+
+  padding:14px 32px;
+
+
+  border-radius:20px;
+
+
+  font-weight:800;
+
+
+  cursor:pointer;
+
+
+  transition:.3s;
+
+
+}
+
+
+
+.summary button:hover{
+
+
+  transform:scale(1.08);
+
+
+  box-shadow:
+
+  0 15px 30px rgba(0,0,0,.2);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* Table */
+
+
+table{
+
+
+ width:100%;
+
+
+ border-collapse:separate;
+
+
+ border-spacing:0 15px;
+
+
+}
+
+
+
+
+
+thead{
+
+
+ background:
+
+ linear-gradient(
+ 135deg,
+ #06b6d4,
+ #3b82f6
+ );
+
+
+ color:white;
+
+
+}
+
+
+
+th{
+
+
+ padding:20px;
+
+
+ font-size:17px;
+
+
+}
+
+
+
+th:first-child{
+
+
+ border-radius:20px 0 0 20px;
+
+
+}
+
+
+
+th:last-child{
+
+
+ border-radius:0 20px 20px 0;
+
+
+}
+
+
+
+
+
+
+
+tbody tr{
+
+
+ background:white;
+
+
+ border-radius:20px;
+
+
+ transition:.35s;
+
+
+}
+
+
+
+tbody tr:hover{
+
+
+ transform:
+
+ scale(1.02);
+
+
+ box-shadow:
+
+ 0 15px 35px rgba(0,0,0,.2);
+
+
+}
+
+
+
+
+
+
+td{
+
+
+ padding:20px;
+
+
+ text-align:center;
+
+
+ color:#374151;
+
+
+ font-weight:600;
+
+
+}
+
+
+
+
+
+
+
+/* Buttons */
+
+
+td button{
+
+
+ width:50px;
+
+
+ height:42px;
+
+
+ border:none;
+
+
+ margin:5px;
+
+
+ border-radius:15px;
+
+
+ color:white;
+
+
+ font-size:16px;
+
+
+ font-weight:800;
+
+
+ cursor:pointer;
+
+
+ transition:.3s;
+
+
+}
+
+
+
+
+
+
+/* Present */
+
+
+td button:first-child{
+
+
+ background:
+
+ linear-gradient(
+ 135deg,
+ #22c55e,
+ #15803d
+ );
+
+
+}
+
+
+
+
+td button:first-child:hover{
+
+
+ transform:
+
+ translateY(-5px)
+ rotate(5deg);
+
+
+}
+
+
+
+
+
+
+/* Absent */
+
+
+td button:last-child{
+
+
+ background:
+
+
+ linear-gradient(
+ 135deg,
+ #fb7185,
+ #e11d48
+ );
+
+
+}
+
+
+
+td button:last-child:hover{
+
+
+ transform:
+
+ translateY(-5px)
+ rotate(-5deg);
+
+
+}
+
+
+
+
+
+
+
+
+/* Status */
+
+
+td:last-child{
+
+
+ color:#2563eb;
+
+
+ font-size:18px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* Mobile */
+
+
+@media(max-width:700px){
+
+
+body{
+
+padding:15px;
+
+}
+
+
+
+.container{
+
+padding:20px;
+
+}
+
+
+
+h1{
+
+font-size:28px;
+
+}
+
+
+
+.summary{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+
+}
