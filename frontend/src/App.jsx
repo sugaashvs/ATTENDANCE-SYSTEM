@@ -82,7 +82,7 @@ function App() {
           className="reset-btn"
           onClick={resetAttendance}
         >
-           REST
+           RESET
         </button>
       </div>
 
